@@ -1,0 +1,55 @@
+{
+  "name": "kysely-solarsystem",
+  "description": "💫 Kysely dialect for SolarSystemDB",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc && npx publint",
+    "prepack": "npm run build",
+    "lint": "npx eslint . && npx depcheck",
+    "format": "npx prettier -w .",
+    "test": "vitest"
+  },
+  "prettier": "@jill64/prettier-config",
+  "devDependencies": {
+    "@jill64/eslint-config-ts": "2.0.3",
+    "@jill64/prettier-config": "1.0.0",
+    "typescript": "5.7.3",
+    "dotenv": "16.4.7",
+    "@types/node": "22.10.7",
+    "vitest": "3.0.3"
+  },
+  "dependencies": {
+    "kysely": "0.27.5"
+  },
+  "homepage": "https://github.com/jill64/kysely-solarsystem#readme",
+  "bugs": "https://github.com/jill64/kysely-solarsystem/issues",
+  "author": {
+    "name": "jill64",
+    "email": "contact@jill64.dev",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jill64/kysely-solarsystem.git",
+    "image": "https://opengraph.githubassets.com/e74ce20a84f8391c23f4cfe983d2e0a1f2323b603c2a4ec9812d8737e9731c5b/jill64/kysely-solarsystem"
+  },
+  "keywords": [
+    "dialect",
+    "fetch",
+    "kysely",
+    "solarsystem"
+  ],
+  "license": "MIT"
+}
