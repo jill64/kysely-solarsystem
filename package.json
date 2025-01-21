@@ -1,0 +1,55 @@
+{
+  "name": "kysely-solarsystem",
+  "description": "",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc && npx publint",
+    "prepack": "npm run build",
+    "lint": "npx eslint . && npx depcheck",
+    "format": "npx prettier -w .",
+    "test": "vitest"
+  },
+  "prettier": "@jill64/prettier-config",
+  "devDependencies": {
+    "@jill64/eslint-config-ts": "2.0.3",
+    "@jill64/prettier-config": "1.0.0",
+    "typescript": "5.7.3",
+    "dotenv": "16.4.7",
+    "@types/node": "22.10.7",
+    "vitest": "3.0.3"
+  },
+  "dependencies": {
+    "kysely": "0.27.5"
+  },
+  "homepage": "https://github.com/jill64/kysely-d1-external#readme",
+  "bugs": "https://github.com/jill64/kysely-d1-external/issues",
+  "author": {
+    "name": "jill64",
+    "email": "contact@jill64.dev",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jill64/kysely-d1-external.git",
+    "image": "https://opengraph.githubassets.com/33595c518121de51044758809f2cc94db67e2d24c0ca66272db44defb074dcde/jill64/kysely-d1-external"
+  },
+  "keywords": [
+    "cloudflare",
+    "d1",
+    "external",
+    "fetch",
+    "kysely"
+  ]
+}
