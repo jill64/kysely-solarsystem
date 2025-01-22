@@ -103,7 +103,7 @@ class SolarSystemConnection implements DatabaseConnection {
 
     console.log('results', results)
 
-    const firstResult = results.result.length ? results.result[0] : null
+    const firstResult = results.result?.length ? results.result[0] : null
 
     const numAffectedRows =
       firstResult && firstResult.meta.changes > 0
