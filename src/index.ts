@@ -101,8 +101,6 @@ class SolarSystemConnection implements DatabaseConnection {
 
     const results = await res.json()
 
-    console.log('results', results)
-
     const firstResult = results.result?.length ? results.result[0] : null
 
     const numAffectedRows =
