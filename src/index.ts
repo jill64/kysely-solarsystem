@@ -100,11 +100,17 @@ class SolarSystemConnection implements DatabaseConnection {
       }
     )
 
+    const text = await res.text()
+
     const results = await attempt(
-      () => res.json(),
+      () => JSON.parse(text),
       async (e) => {
         throw new Error(
-          `Failed to parse JSON response. \n ${e?.message}\n ${await res.text()}`
+          `Failed to parse JSON response. 
+${res.status} - ${res.statusText}
+${e?.message}
+${text}
+`
         )
       }
     )
