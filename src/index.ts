@@ -102,13 +102,13 @@ class SolarSystemConnection implements DatabaseConnection {
 
     const text = await res.text()
 
-    const results = await attempt(
+    const results = attempt(
       () => JSON.parse(text),
-      async (e) => {
+      (e) => {
         throw new Error(
-          `Failed to parse JSON response. 
+          `[Kysely SolarSystem Dialect]: Failed to parse JSON response. 
 ${res.status} - ${res.statusText}
-${e?.message}
+${e?.message ?? 'Unknown error'}
 ${text}
 `
         )
