@@ -103,7 +103,7 @@ class SolarSystemConnection implements DatabaseConnection {
       (e, o) => {
         throw new Error(
           `[SolarSystemDialect]: Failed to parse JSON response. 
-${res.status} - ${res.statusText}
+${res.status} | ${res.statusText}
 ${e?.message ?? JSON.stringify(o, null, 2)}
 ${text}
 `
