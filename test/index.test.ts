@@ -16,8 +16,7 @@ test(
         teamName: env.SOLARSYSTEM_TEAM_NAME!,
         clusterName: env.SOLARSYSTEM_CLUSTER_NAME!,
         branchName: env.SOLARSYSTEM_BRANCH_NAME!,
-        apiKey: env.SOLARSYSTEM_API_KEY!,
-        baseUrl: 'https://dev.api-solarsystemdb.pages.dev'
+        apiKey: env.SOLARSYSTEM_API_KEY!
       })
     })
 
