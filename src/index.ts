@@ -18,7 +18,6 @@ export interface SolarSystemDialectConfig {
   clusterName: string
   branchName: string
   apiKey: string
-  baseUrl?: string
 }
 
 export class SolarSystemDialect implements Dialect {
@@ -83,22 +82,19 @@ class SolarSystemConnection implements DatabaseConnection {
   }
 
   async executeQuery<O>(compiledQuery: CompiledQuery): Promise<QueryResult<O>> {
-    const res = await fetch(
-      `${this.config.baseUrl ?? 'https://api.solarsystemdb.com'}/query`,
-      {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${this.config.apiKey}`
-        },
-        body: JSON.stringify({
-          team_name: this.config.teamName,
-          cluster_name: this.config.clusterName,
-          branch_name: this.config.branchName,
-          sql: compiledQuery.sql,
-          params: compiledQuery.parameters
-        })
-      }
-    )
+    const res = await fetch('https://api.solarsystemdb.com/query', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${this.config.apiKey}`
+      },
+      body: JSON.stringify({
+        team_name: this.config.teamName,
+        cluster_name: this.config.clusterName,
+        branch_name: this.config.branchName,
+        sql: compiledQuery.sql,
+        params: compiledQuery.parameters
+      })
+    })
 
     const text = await res.text()
 
