@@ -131,18 +131,22 @@ ${text}
   }
 
   async beginTransaction() {
-    throw new Error('[SolarSystemDialect]: Transactions are not supported.')
+    throw new Error('[SolarSystemDialect]: beginTransaction are not supported.')
   }
 
   async commitTransaction() {
-    throw new Error('[SolarSystemDialect]: Transactions are not supported.')
+    throw new Error(
+      '[SolarSystemDialect]: commitTransaction are not supported.'
+    )
   }
 
   async rollbackTransaction() {
-    throw new Error('[SolarSystemDialect]: Transactions are not supported.')
+    throw new Error(
+      '[SolarSystemDialect]: rollbackTransaction are not supported.'
+    )
   }
 
   async *streamQuery<O>(): AsyncIterableIterator<QueryResult<O>> {
-    throw new Error('[SolarSystemDialect]: Streaming is not supported.')
+    throw new Error('[SolarSystemDialect]: streamQuery is not supported.')
   }
 }
