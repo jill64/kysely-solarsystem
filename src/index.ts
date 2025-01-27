@@ -102,7 +102,7 @@ class SolarSystemConnection implements DatabaseConnection {
       () => JSON.parse(text),
       (e, o) => {
         throw new Error(
-          `[Kysely SolarSystem Dialect]: Failed to parse JSON response. 
+          `[SolarSystemDialect]: Failed to parse JSON response. 
 ${res.status} - ${res.statusText}
 ${e?.message ?? String(o) ?? 'Unknown error'}
 ${text}
