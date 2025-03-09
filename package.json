@@ -16,7 +16,7 @@
   "scripts": {
     "build": "tsc && npx publint",
     "prepack": "bun run build",
-    "lint": "eslint . && bunx depcheck",
+    "lint": "eslint .",
     "format": "bunx prettier -w .",
     "test": "bun test --timeout 30000"
   },
