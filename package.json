@@ -15,10 +15,10 @@
   },
   "scripts": {
     "build": "tsc && npx publint",
-    "prepack": "npm run build",
-    "lint": "npx eslint . && npx depcheck",
-    "format": "npx prettier -w .",
-    "test": "vitest"
+    "prepack": "bun run build",
+    "lint": "eslint . && bunx depcheck",
+    "format": "bunx prettier -w .",
+    "test": "bun test --timeout 30000"
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
@@ -27,7 +27,8 @@
     "typescript": "5.7.3",
     "dotenv": "16.4.7",
     "@types/node": "22.10.7",
-    "vitest": "3.0.4"
+    "@types/bun": "1.2.4",
+    "eslint": "9.22.0"
   },
   "dependencies": {
     "kysely": "0.27.5",
