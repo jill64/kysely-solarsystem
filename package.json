@@ -22,7 +22,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/eslint-config-ts": "2.0.4",
+    "@jill64/eslint-config-ts": "2.0.16",
     "@jill64/prettier-config": "1.0.0",
     "typescript": "5.7.3",
     "dotenv": "16.4.7",
@@ -44,7 +44,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/kysely-solarsystem.git",
-    "image": "https://opengraph.githubassets.com/75917db5e1d0671dbc2d7da3b161c4b0d3f8911816a170295e0bf5d2a9467631/jill64/kysely-solarsystem"
+    "image": "https://opengraph.githubassets.com/a6aa928d1f348deefb4ddc73eae1d42eedb47fc3da52589842951a1f03ed9385/jill64/kysely-solarsystem"
   },
   "keywords": [
     "dialect",
