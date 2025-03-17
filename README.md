@@ -12,6 +12,30 @@
 
 <!----- END GHOST DOCS HEADER ----->
 
+This library is a dialect for using [SolarSystemDB](https://solarsystemdb.com) with [Kysely](https://kysely.dev).
+
+## Installation
+
+```bash
+npm i kysely-solarsystem
+```
+
+## Usage
+
+```js
+import { Kysely } from 'kysely'
+import { SolarSystemDialect } from 'kysely-solarsystem'
+
+const db = new Kysely({
+  dialect: new SolarSystemDialect({
+    teamName: 'team-name',
+    clusterName: 'cluster-name',
+    branchName: 'branch-name',
+    apiKey: '<SOLARSYSTEMDB-API-KEY>'
+  })
+})
+```
+
 <!----- BEGIN GHOST DOCS FOOTER ----->
 
 ## License
