@@ -1,7 +1,7 @@
 {
   "name": "kysely-solarsystem",
   "description": "💫 Kysely dialect for SolarSystemDB",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "main": "dist/index.js",
   "files": [
@@ -44,7 +44,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/kysely-solarsystem.git",
-    "image": "https://opengraph.githubassets.com/a2658b25c3a5d33a224064fc57ddbc31cc316f73a8fad2bc0779b8e5fe8c7459/jill64/kysely-solarsystem"
+    "image": "https://opengraph.githubassets.com/9898ed6e8413fc9269e122f34050fa254e5986cd04b66cdc89379d3421e836a0/jill64/kysely-solarsystem"
   },
   "keywords": [
     "dialect",
