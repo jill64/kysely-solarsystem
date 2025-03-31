@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "kysely": "0.27.6",
-    "@jill64/attempt": "1.1.6"
+    "@jill64/attempt": "1.1.7"
   },
   "homepage": "https://github.com/jill64/kysely-solarsystem#readme",
   "bugs": "https://github.com/jill64/kysely-solarsystem/issues",
