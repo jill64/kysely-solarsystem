@@ -44,7 +44,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/kysely-solarsystem.git",
-    "image": "https://opengraph.githubassets.com/67c2194d6cdef3e8bcffaf8613e913d2d50ecde7d6f8992e1781b20889bddb46/jill64/kysely-solarsystem"
+    "image": "https://opengraph.githubassets.com/069cc716bf7f8a030835ca83d11d19c30f0232bfe5bd68a3c461d25292630362/jill64/kysely-solarsystem"
   },
   "keywords": [
     "dialect",
